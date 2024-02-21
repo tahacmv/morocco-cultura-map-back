@@ -1,0 +1,1338 @@
+@prefix : <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-34#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-34#> .
+
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-34> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasAerophone
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasAerophone> rdf:type owl:ObjectProperty ;
+                                                                                       rdfs:subPropertyOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasInstrument> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasCondiment
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasCondiment> rdf:type owl:ObjectProperty ;
+                                                                                       rdfs:domain <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Plat> ;
+                                                                                       rdfs:range <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Condiment> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasCordophone
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasCordophone> rdf:type owl:ObjectProperty ;
+                                                                                        rdfs:subPropertyOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasInstrument> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasEpice
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasEpice> rdf:type owl:ObjectProperty ;
+                                                                                   rdfs:subPropertyOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasCondiment> ;
+                                                                                   rdfs:domain <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Plat> ;
+                                                                                   rdfs:range <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Epice> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasFruit
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasFruit> rdf:type owl:ObjectProperty ;
+                                                                                   rdfs:subPropertyOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasObjetComestible> ;
+                                                                                   rdfs:domain <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Plat> ;
+                                                                                   rdfs:range <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Fruit> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasInstrument
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasInstrument> rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasLegume
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasLegume> rdf:type owl:ObjectProperty ;
+                                                                                    rdfs:subPropertyOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasObjetComestible> ;
+                                                                                    rdfs:domain <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Plat> ;
+                                                                                    rdfs:range <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Legume> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasObjetComestible
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasObjetComestible> rdf:type owl:ObjectProperty ;
+                                                                                             rdfs:domain <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Plat> ;
+                                                                                             rdfs:range <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetComestible> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasOrigine
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasOrigine> rdf:type owl:ObjectProperty ;
+                                                                                     rdfs:domain owl:Thing ;
+                                                                                     rdfs:range <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Region> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasPate
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasPate> rdf:type owl:ObjectProperty ;
+                                                                                  rdfs:subPropertyOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasObjetComestible> ;
+                                                                                  rdfs:domain <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Plat> ;
+                                                                                  rdfs:range <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Pate> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasPercussion
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasPercussion> rdf:type owl:ObjectProperty ;
+                                                                                        rdfs:subPropertyOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasInstrument> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasViande
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasViande> rdf:type owl:ObjectProperty ;
+                                                                                    rdfs:subPropertyOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasObjetComestible> ;
+                                                                                    rdfs:domain <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Plat> ;
+                                                                                    rdfs:range <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Viande> .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Aerophone
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Aerophone> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Instrument> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Andaloussi
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Andaloussi> rdf:type owl:Class ;
+                                                                                     rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GenreMusical> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Art
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Art> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Artisanat
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Artisanat> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Art> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Bendir
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Bendir> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Percussion> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Cereale
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Cereale> rdf:type owl:Class ;
+                                                                                  rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetComestible> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Chaabi
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Chaabi> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GenreMusical> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Condiment
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Condiment> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Cordophone
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Cordophone> rdf:type owl:Class ;
+                                                                                     rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Instrument> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Couscous
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Couscous> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Plat> ,
+                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                     owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasViande> ;
+                                                                                                     owl:someValuesFrom <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Viande>
+                                                                                                   ] ,
+                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                     owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasObjetComestible> ;
+                                                                                                     owl:hasValue <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Semoule>
+                                                                                                   ] .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#CouscousLegume
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#CouscousLegume> rdf:type owl:Class ;
+                                                                                         rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Couscous> ,
+                                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieDeRabat> ,
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasEpice> ;
+                                                                                                           owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                                                               owl:oneOf ( <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Curcuma>
+                                                                                                                                           <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GingembreMoulu>
+                                                                                                                                           <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#PoivreMoulu>
+                                                                                                                                           <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Sel>
+                                                                                                                                         )
+                                                                                                                             ]
+                                                                                                         ] ,
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasFruit> ;
+                                                                                                           owl:hasValue <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Tomate>
+                                                                                                         ] ,
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasViande> ;
+                                                                                                           owl:hasValue <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Veau>
+                                                                                                         ] ;
+                                                                                         owl:disjointWith <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#CouscousPoulet> ,
+                                                                                                          <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieDeLaayoune> ,
+                                                                                                          <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Tajine> ,
+                                                                                                          <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#TajineAgneau> ,
+                                                                                                          <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#TajinePoulet> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#CouscousPoulet
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#CouscousPoulet> rdf:type owl:Class ;
+                                                                                         rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Couscous> ,
+                                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieRégionale> ,
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasEpice> ;
+                                                                                                           owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                                                               owl:oneOf ( <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#PoivreMoulu>
+                                                                                                                                           <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#RasElHanout>
+                                                                                                                                           <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Sel>
+                                                                                                                                         )
+                                                                                                                             ]
+                                                                                                         ] ,
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasLegume> ;
+                                                                                                           owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                                                               owl:oneOf ( <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Ail>
+                                                                                                                                           <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Onion>
+                                                                                                                                         )
+                                                                                                                             ]
+                                                                                                         ] ,
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasViande> ;
+                                                                                                           owl:hasValue <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Poulet>
+                                                                                                         ] .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Derbouka
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Derbouka> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Percussion> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Epice
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Epice> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Condiment> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Evenement
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Evenement> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Exposition
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Exposition> rdf:type owl:Class ;
+                                                                                     rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Evenement> ;
+                                                                                     owl:disjointWith <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Festival> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Festival
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Festival> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Evenement> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Fruit
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Fruit> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetComestible> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#FruitDeMer
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#FruitDeMer> rdf:type owl:Class ;
+                                                                                     rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetComestible> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#FruitFrais
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#FruitFrais> rdf:type owl:Class ;
+                                                                                     rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Fruit> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#FruitSec
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#FruitSec> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Fruit> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Gambri
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Gambri> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Cordophone> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieDeAgadir
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieDeAgadir> rdf:type owl:Class ;
+                                                                                              owl:equivalentClass [ owl:intersectionOf ( <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Plat>
+                                                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                                                           owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasPate> ;
+                                                                                                                                           owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                                                                                               owl:oneOf ( <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Semoule>
+                                                                                                                                                                           <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Vermicelle>
+                                                                                                                                                                         )
+                                                                                                                                                             ]
+                                                                                                                                         ]
+                                                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                                                           owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasFruit> ;
+                                                                                                                                           owl:hasValue <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Amande>
+                                                                                                                                         ]
+                                                                                                                                       ) ;
+                                                                                                                    rdf:type owl:Class
+                                                                                                                  ] ;
+                                                                                              rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieRégionale> ,
+                                                                                                              <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Plat> ,
+                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasOrigine> ;
+                                                                                                                owl:hasValue <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Sous_Massa>
+                                                                                                              ] ;
+                                                                                              owl:disjointWith <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieDeLaayoune> ,
+                                                                                                               <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Tajine> ,
+                                                                                                               <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#TajineAgneau> ,
+                                                                                                               <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#TajinePoulet> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieDeFes
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieDeFes> rdf:type owl:Class ;
+                                                                                           owl:equivalentClass [ owl:intersectionOf ( <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Plat>
+                                                                                                                                      [ rdf:type owl:Class ;
+                                                                                                                                        owl:unionOf ( [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                                                                                               owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasFruit> ;
+                                                                                                                                                                               owl:someValuesFrom <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Fruit>
+                                                                                                                                                                             ]
+                                                                                                                                                                             [ rdf:type owl:Restriction ;
+                                                                                                                                                                               owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasPate> ;
+                                                                                                                                                                               owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                                                                                                                    owl:oneOf ( <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Msemen>
+                                                                                                                                                                                                              )
+                                                                                                                                                                                                  ]
+                                                                                                                                                                             ]
+                                                                                                                                                                           ) ;
+                                                                                                                                                        rdf:type owl:Class
+                                                                                                                                                      ]
+                                                                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                                                                        owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasEpice> ;
+                                                                                                                                                        owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                                                                                                            owl:oneOf ( <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Cumin>
+                                                                                                                                                                                        <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Sel>
+                                                                                                                                                                                      )
+                                                                                                                                                                          ]
+                                                                                                                                                      ]
+                                                                                                                                                    )
+                                                                                                                                      ]
+                                                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                                                        owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasViande> ;
+                                                                                                                                        owl:someValuesFrom <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Viande>
+                                                                                                                                      ]
+                                                                                                                                    ) ;
+                                                                                                                 rdf:type owl:Class
+                                                                                                               ] ;
+                                                                                           rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieRégionale> ,
+                                                                                                           <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Plat> ,
+                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                             owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasOrigine> ;
+                                                                                                             owl:hasValue <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Fes_Meknes>
+                                                                                                           ] .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieDeLaayoune
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieDeLaayoune> rdf:type owl:Class ;
+                                                                                                owl:equivalentClass [ owl:intersectionOf ( <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Plat>
+                                                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                                                             owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasViande> ;
+                                                                                                                                             owl:someValuesFrom <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Viande>
+                                                                                                                                           ]
+                                                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                                                             owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasEpice> ;
+                                                                                                                                             owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                                                                                                 owl:oneOf ( <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Cumin>
+                                                                                                                                                                             <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#PoivreMoulu>
+                                                                                                                                                                             <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#RasElHanout>
+                                                                                                                                                                             <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Sel>
+                                                                                                                                                                           )
+                                                                                                                                                               ]
+                                                                                                                                           ]
+                                                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                                                             owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasLegume> ;
+                                                                                                                                             owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                                                                                                 owl:oneOf ( <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Ail>
+                                                                                                                                                                             <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Onion>
+                                                                                                                                                                           )
+                                                                                                                                                               ]
+                                                                                                                                           ]
+                                                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                                                             owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasFruit> ;
+                                                                                                                                             owl:maxCardinality "0"^^xsd:nonNegativeInteger
+                                                                                                                                           ]
+                                                                                                                                         ) ;
+                                                                                                                      rdf:type owl:Class
+                                                                                                                    ] ;
+                                                                                                rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieRégionale> ,
+                                                                                                                <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Plat> ,
+                                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                                  owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasOrigine> ;
+                                                                                                                  owl:hasValue <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Laayoune_Sakia_El_hamra>
+                                                                                                                ] ;
+                                                                                                owl:disjointWith <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieDeRabat> ,
+                                                                                                                 <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#PastillaPoulet> ,
+                                                                                                                 <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Seffa> ,
+                                                                                                                 <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#SeffaMedfouna> ,
+                                                                                                                 <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#SeffaSemoule> ,
+                                                                                                                 <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Tangia> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieDeMarrakech
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieDeMarrakech> rdf:type owl:Class ;
+                                                                                                 owl:equivalentClass [ owl:intersectionOf ( <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Plat>
+                                                                                                                                            [ rdf:type owl:Restriction ;
+                                                                                                                                              owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasViande> ;
+                                                                                                                                              owl:someValuesFrom <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ViandeRouge>
+                                                                                                                                            ]
+                                                                                                                                            [ rdf:type owl:Restriction ;
+                                                                                                                                              owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasEpice> ;
+                                                                                                                                              owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                                                                                                  owl:oneOf ( <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#RasElHanout>
+                                                                                                                                                                            )
+                                                                                                                                                                ]
+                                                                                                                                            ]
+                                                                                                                                            [ rdf:type owl:Restriction ;
+                                                                                                                                              owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasLegume> ;
+                                                                                                                                              owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                                                                                                  owl:oneOf ( <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Ail>
+                                                                                                                                                                              <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Onion>
+                                                                                                                                                                              <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#PommeDeTerre>
+                                                                                                                                                                            )
+                                                                                                                                                                ]
+                                                                                                                                            ]
+                                                                                                                                          ) ;
+                                                                                                                       rdf:type owl:Class
+                                                                                                                     ] ;
+                                                                                                 rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieRégionale> ,
+                                                                                                                 <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Plat> ,
+                                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                                   owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasOrigine> ;
+                                                                                                                   owl:hasValue <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Marrakech_Safi>
+                                                                                                                 ] .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieDeNador
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieDeNador> rdf:type owl:Class ;
+                                                                                             owl:equivalentClass [ owl:intersectionOf ( <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Plat>
+                                                                                                                                        [ rdf:type owl:Class ;
+                                                                                                                                          owl:unionOf ( [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                                                                                                 owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasEpice> ;
+                                                                                                                                                                                 owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                                                                                                                                     owl:oneOf ( <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Curcuma>
+                                                                                                                                                                                                                 <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#PoivreMoulu>
+                                                                                                                                                                                                                 <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Sel>
+                                                                                                                                                                                                               )
+                                                                                                                                                                                                   ]
+                                                                                                                                                                               ]
+                                                                                                                                                                               [ rdf:type owl:Restriction ;
+                                                                                                                                                                                 owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasLegume> ;
+                                                                                                                                                                                 owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                                                                                                                                     owl:oneOf ( <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Ail>
+                                                                                                                                                                                                                 <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Carotte>
+                                                                                                                                                                                                                 <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Onion>
+                                                                                                                                                                                                                 <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#PommeDeTerre>
+                                                                                                                                                                                                               )
+                                                                                                                                                                                                   ]
+                                                                                                                                                                               ]
+                                                                                                                                                                             ) ;
+                                                                                                                                                          rdf:type owl:Class
+                                                                                                                                                        ]
+                                                                                                                                                        [ rdf:type owl:Restriction ;
+                                                                                                                                                          owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasPate> ;
+                                                                                                                                                          owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                                                                                                              owl:oneOf ( <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#PateFilo>
+                                                                                                                                                                                        )
+                                                                                                                                                                            ]
+                                                                                                                                                        ]
+                                                                                                                                                      )
+                                                                                                                                        ]
+                                                                                                                                        [ rdf:type owl:Restriction ;
+                                                                                                                                          owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasViande> ;
+                                                                                                                                          owl:someValuesFrom <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Viande>
+                                                                                                                                        ]
+                                                                                                                                      ) ;
+                                                                                                                   rdf:type owl:Class
+                                                                                                                 ] ;
+                                                                                             rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieRégionale> ,
+                                                                                                             <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Plat> ,
+                                                                                                             [ rdf:type owl:Restriction ;
+                                                                                                               owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasOrigine> ;
+                                                                                                               owl:hasValue <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Oriental>
+                                                                                                             ] .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieDeRabat
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieDeRabat> rdf:type owl:Class ;
+                                                                                             owl:equivalentClass [ owl:intersectionOf ( <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Plat>
+                                                                                                                                        [ rdf:type owl:Restriction ;
+                                                                                                                                          owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasFruit> ;
+                                                                                                                                          owl:someValuesFrom <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Fruit>
+                                                                                                                                        ]
+                                                                                                                                        [ rdf:type owl:Restriction ;
+                                                                                                                                          owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasViande> ;
+                                                                                                                                          owl:someValuesFrom <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Viande>
+                                                                                                                                        ]
+                                                                                                                                        [ rdf:type owl:Restriction ;
+                                                                                                                                          owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasEpice> ;
+                                                                                                                                          owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                                                                                              owl:oneOf ( <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Curcuma>
+                                                                                                                                                                          <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GingembreMoulu>
+                                                                                                                                                                          <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#PoivreMoulu>
+                                                                                                                                                                          <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#RasElHanout>
+                                                                                                                                                                          <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Sel>
+                                                                                                                                                                        )
+                                                                                                                                                            ]
+                                                                                                                                        ]
+                                                                                                                                      ) ;
+                                                                                                                   rdf:type owl:Class
+                                                                                                                 ] ;
+                                                                                             rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieRégionale> ,
+                                                                                                             <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Plat> ,
+                                                                                                             [ rdf:type owl:Restriction ;
+                                                                                                               owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasOrigine> ;
+                                                                                                               owl:hasValue <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Rabat_Sale_Kenitra>
+                                                                                                             ] ;
+                                                                                             owl:disjointWith <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Tajine> ,
+                                                                                                              <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#TajineAgneau> ,
+                                                                                                              <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#TajinePoulet> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieDeTanger
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieDeTanger> rdf:type owl:Class ;
+                                                                                              owl:equivalentClass [ owl:intersectionOf ( <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Plat>
+                                                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                                                           owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasPate> ;
+                                                                                                                                           owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                                                                                               owl:oneOf ( <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#PateFilo>
+                                                                                                                                                                           <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Vermicelle>
+                                                                                                                                                                         )
+                                                                                                                                                             ]
+                                                                                                                                         ]
+                                                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                                                           owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasViande> ;
+                                                                                                                                           owl:allValuesFrom <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Poisson>
+                                                                                                                                         ]
+                                                                                                                                       ) ;
+                                                                                                                    rdf:type owl:Class
+                                                                                                                  ] ;
+                                                                                              rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieRégionale> ,
+                                                                                                              <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Plat> ,
+                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasOrigine> ;
+                                                                                                                owl:hasValue <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Tanger_Tetouan_El_Hoceima>
+                                                                                                              ] .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieRégionale
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieRégionale> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GenreMusical
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GenreMusical> rdf:type owl:Class ;
+                                                                                       rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Art> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Ghaita
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Ghaita> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Aerophone> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Gnaoua
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Gnaoua> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GenreMusical> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Guitare
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Guitare> rdf:type owl:Class ;
+                                                                                  rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Cordophone> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Instrument
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Instrument> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Issawa
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Issawa> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GenreMusical> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Khalie
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Khalie> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieDeFes> ,
+                                                                                                 <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Plat> ,
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasEpice> ;
+                                                                                                   owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                                                       owl:oneOf ( <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Cumin>
+                                                                                                                                   <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Sel>
+                                                                                                                                 )
+                                                                                                                     ]
+                                                                                                 ] ,
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasViande> ;
+                                                                                                   owl:hasValue <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Veau>
+                                                                                                 ] .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Krakeb
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Krakeb> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Percussion> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Legume
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Legume> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetComestible> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Luth
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Luth> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Cordophone> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Musique
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Musique> rdf:type owl:Class ;
+                                                                                  rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Art> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Nay
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Nay> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Aerophone> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetComestible
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetComestible> rdf:type owl:Class ;
+                                                                                          rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Oud
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Oud> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Cordophone> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Pastilla
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Pastilla> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Plat> ,
+                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                     owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasPate> ;
+                                                                                                     owl:someValuesFrom <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Pate>
+                                                                                                   ] .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#PastillaPoisson
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#PastillaPoisson> rdf:type owl:Class ;
+                                                                                          rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieDeTanger> ,
+                                                                                                          <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Pastilla> ,
+                                                                                                          [ rdf:type owl:Restriction ;
+                                                                                                            owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasPate> ;
+                                                                                                            owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                                                                owl:oneOf ( <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#PateFilo>
+                                                                                                                                            <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Vermicelle>
+                                                                                                                                          )
+                                                                                                                              ]
+                                                                                                          ] ,
+                                                                                                          [ rdf:type owl:Restriction ;
+                                                                                                            owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasViande> ;
+                                                                                                            owl:allValuesFrom [ owl:intersectionOf ( <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#FruitDeMer>
+                                                                                                                                                     <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Poisson>
+                                                                                                                                                   ) ;
+                                                                                                                                rdf:type owl:Class
+                                                                                                                              ]
+                                                                                                          ] .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#PastillaPoulet
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#PastillaPoulet> rdf:type owl:Class ;
+                                                                                         rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieDeNador> ,
+                                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Pastilla> ,
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasPate> ;
+                                                                                                           owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                                                               owl:oneOf ( <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#PateFilo>
+                                                                                                                                         )
+                                                                                                                             ]
+                                                                                                         ] ,
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasFruit> ;
+                                                                                                           owl:hasValue <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Amande>
+                                                                                                         ] ,
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasViande> ;
+                                                                                                           owl:hasValue <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Poulet>
+                                                                                                         ] ;
+                                                                                         owl:disjointWith <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Tajine> ,
+                                                                                                          <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#TajineAgneau> ,
+                                                                                                          <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#TajinePoulet> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Pate
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Pate> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetComestible> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Percussion
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Percussion> rdf:type owl:Class ;
+                                                                                     rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Instrument> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Piano
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Piano> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Cordophone> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Plat
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Plat> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> ,
+                                                                                               [ rdf:type owl:Restriction ;
+                                                                                                 owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasCondiment> ;
+                                                                                                 owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                                                               ] ,
+                                                                                               [ rdf:type owl:Restriction ;
+                                                                                                 owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasObjetComestible> ;
+                                                                                                 owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                                                               ] ,
+                                                                                               [ rdf:type owl:Restriction ;
+                                                                                                 owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasOrigine> ;
+                                                                                                 owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                                                               ] .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Poisson
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Poisson> rdf:type owl:Class ;
+                                                                                  rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetComestible> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Qanoun
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Qanoun> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Cordophone> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Rabab
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Rabab> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Cordophone> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Region
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Region> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Rfissa
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Rfissa> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieDeFes> ,
+                                                                                                 <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Plat> ,
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasEpice> ;
+                                                                                                   owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                                                       owl:oneOf ( <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Cumin>
+                                                                                                                                   <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Sel>
+                                                                                                                                 )
+                                                                                                                     ]
+                                                                                                 ] ,
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasPate> ;
+                                                                                                   owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                                                       owl:oneOf ( <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Msemen>
+                                                                                                                                 )
+                                                                                                                     ]
+                                                                                                 ] ,
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasLegume> ;
+                                                                                                   owl:hasValue <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Onion>
+                                                                                                 ] ,
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasViande> ;
+                                                                                                   owl:hasValue <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Poulet>
+                                                                                                 ] .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Sauce
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Sauce> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Condiment> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Seffa
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Seffa> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Plat> ,
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasPate> ;
+                                                                                                  owl:someValuesFrom <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Pate>
+                                                                                                ] ,
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasFruit> ;
+                                                                                                  owl:hasValue <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Amande>
+                                                                                                ] ;
+                                                                                owl:disjointWith <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Tajine> ,
+                                                                                                 <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#TajineAgneau> ,
+                                                                                                 <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#TajinePoulet> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#SeffaMedfouna
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#SeffaMedfouna> rdf:type owl:Class ;
+                                                                                        rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieDeAgadir> ,
+                                                                                                        <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Seffa> ,
+                                                                                                        [ rdf:type owl:Restriction ;
+                                                                                                          owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasViande> ;
+                                                                                                          owl:someValuesFrom <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ViandeBlanche>
+                                                                                                        ] ,
+                                                                                                        [ rdf:type owl:Restriction ;
+                                                                                                          owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasPate> ;
+                                                                                                          owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                                                              owl:oneOf ( <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Vermicelle>
+                                                                                                                                        )
+                                                                                                                            ]
+                                                                                                        ] ;
+                                                                                        owl:disjointWith <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Tajine> ,
+                                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#TajineAgneau> ,
+                                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#TajinePoulet> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#SeffaSemoule
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#SeffaSemoule> rdf:type owl:Class ;
+                                                                                       rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieDeAgadir> ,
+                                                                                                       <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Seffa> ,
+                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                         owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasPate> ;
+                                                                                                         owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                                                             owl:oneOf ( <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Semoule>
+                                                                                                                                       )
+                                                                                                                           ]
+                                                                                                       ] ;
+                                                                                       owl:disjointWith <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Tajine> ,
+                                                                                                        <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#TajineAgneau> ,
+                                                                                                        <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#TajinePoulet> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Taarija
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Taarija> rdf:type owl:Class ;
+                                                                                  rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Percussion> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Tajine
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Tajine> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Plat> ,
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasFruit> ;
+                                                                                                   owl:cardinality "0"^^xsd:nonNegativeInteger
+                                                                                                 ] ;
+                                                                                 owl:disjointWith <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Tangia> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#TajineAgneau
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#TajineAgneau> rdf:type owl:Class ;
+                                                                                       rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieDeNador> ,
+                                                                                                       <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Tajine> ,
+                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                         owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasEpice> ;
+                                                                                                         owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                                                             owl:oneOf ( <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Curcuma>
+                                                                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#PoivreMoulu>
+                                                                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Sel>
+                                                                                                                                       )
+                                                                                                                           ]
+                                                                                                       ] ,
+                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                         owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasLegume> ;
+                                                                                                         owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                                                             owl:oneOf ( <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Ail>
+                                                                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Onion>
+                                                                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#PommeDeTerre>
+                                                                                                                                       )
+                                                                                                                           ]
+                                                                                                       ] ,
+                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                         owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasViande> ;
+                                                                                                         owl:hasValue <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Agneau>
+                                                                                                       ] ;
+                                                                                       owl:disjointWith <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Tangia> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#TajinePoulet
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#TajinePoulet> rdf:type owl:Class ;
+                                                                                       rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieDeLaayoune> ,
+                                                                                                       <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Tajine> ,
+                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                         owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasEpice> ;
+                                                                                                         owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                                                             owl:oneOf ( <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Cumin>
+                                                                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#PoivreMoulu>
+                                                                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#RasElHanout>
+                                                                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Sel>
+                                                                                                                                       )
+                                                                                                                           ]
+                                                                                                       ] ,
+                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                         owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasLegume> ;
+                                                                                                         owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                                                             owl:oneOf ( <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Ail>
+                                                                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Onion>
+                                                                                                                                       )
+                                                                                                                           ]
+                                                                                                       ] ,
+                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                         owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasViande> ;
+                                                                                                         owl:hasValue <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Poulet>
+                                                                                                       ] ;
+                                                                                       owl:disjointWith <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Tangia> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Tangia
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Tangia> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieDeMarrakech> ,
+                                                                                                 <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieDeRabat> ,
+                                                                                                 <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Plat> ,
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasViande> ;
+                                                                                                   owl:someValuesFrom <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ViandeRouge>
+                                                                                                 ] ,
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasEpice> ;
+                                                                                                   owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                                                       owl:oneOf ( <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#RasElHanout>
+                                                                                                                                 )
+                                                                                                                     ]
+                                                                                                 ] ,
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasLegume> ;
+                                                                                                   owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                                                       owl:oneOf ( <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Ail>
+                                                                                                                                   <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Onion>
+                                                                                                                                 )
+                                                                                                                     ]
+                                                                                                 ] ,
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasFruit> ;
+                                                                                                   owl:hasValue <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Tomate>
+                                                                                                 ] .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Tbel
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Tbel> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Percussion> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Viande
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Viande> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetComestible> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ViandeBlanche
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ViandeBlanche> rdf:type owl:Class ;
+                                                                                        rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Viande> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ViandeRouge
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ViandeRouge> rdf:type owl:Class ;
+                                                                                      rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Viande> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Violon
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Violon> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Cordophone> .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Agneau
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Agneau> rdf:type owl:NamedIndividual ,
+                                                                                          <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetComestible> ,
+                                                                                          <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> ,
+                                                                                          <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Viande> ,
+                                                                                          <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ViandeRouge> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Ail
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Ail> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Legume> ,
+                                                                                       <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetComestible> ,
+                                                                                       <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Amande
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Amande> rdf:type owl:NamedIndividual ,
+                                                                                          <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Fruit> ,
+                                                                                          <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#FruitSec> ,
+                                                                                          <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetComestible> ,
+                                                                                          <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Banane
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Banane> rdf:type owl:NamedIndividual ,
+                                                                                          <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Fruit> ,
+                                                                                          <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#FruitFrais> ,
+                                                                                          <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetComestible> ,
+                                                                                          <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Boeuf
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Boeuf> rdf:type owl:NamedIndividual ,
+                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetComestible> ,
+                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> ,
+                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Viande> ,
+                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ViandeRouge> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Cajou
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Cajou> rdf:type owl:NamedIndividual ,
+                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Fruit> ,
+                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#FruitSec> ,
+                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetComestible> ,
+                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Calamar
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Calamar> rdf:type owl:NamedIndividual ,
+                                                                                           <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#FruitDeMer> ,
+                                                                                           <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetComestible> ,
+                                                                                           <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Carotte
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Carotte> rdf:type owl:NamedIndividual ,
+                                                                                           <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Legume> ,
+                                                                                           <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetComestible> ,
+                                                                                           <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Colin
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Colin> rdf:type owl:NamedIndividual ,
+                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetComestible> ,
+                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> ,
+                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Poisson> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Courge
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Courge> rdf:type owl:NamedIndividual ,
+                                                                                          <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Legume> ,
+                                                                                          <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetComestible> ,
+                                                                                          <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Crevette
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Crevette> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#FruitDeMer> ,
+                                                                                            <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetComestible> ,
+                                                                                            <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Cumin
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Cumin> rdf:type owl:NamedIndividual ,
+                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Condiment> ,
+                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Epice> ,
+                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Curcuma
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Curcuma> rdf:type owl:NamedIndividual ,
+                                                                                           <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Condiment> ,
+                                                                                           <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Epice> ,
+                                                                                           <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Fes_Meknes
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Fes_Meknes> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Region> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GingembreMoulu
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GingembreMoulu> rdf:type owl:NamedIndividual ,
+                                                                                                  <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Condiment> ,
+                                                                                                  <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Epice> ,
+                                                                                                  <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Khaliee
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Khaliee> rdf:type owl:NamedIndividual ,
+                                                                                           <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieDeFes> ,
+                                                                                           <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieRégionale> ,
+                                                                                           <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Khalie> ,
+                                                                                           <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> ,
+                                                                                           <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Plat> ;
+                                                                                  <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasObjetComestible> <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Veau> ;
+                                                                                  <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasOrigine> <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Fes_Meknes> ;
+                                                                                  <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasViande> <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Veau> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Laayoune_Sakia_El_hamra
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Laayoune_Sakia_El_hamra> rdf:type owl:NamedIndividual ,
+                                                                                                           <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Region> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Marrakech_Safi
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Marrakech_Safi> rdf:type owl:NamedIndividual ,
+                                                                                                  <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Region> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Merlan
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Merlan> rdf:type owl:NamedIndividual ,
+                                                                                          <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetComestible> ,
+                                                                                          <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> ,
+                                                                                          <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Poisson> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Msemen
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Msemen> rdf:type owl:NamedIndividual ,
+                                                                                          <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetComestible> ,
+                                                                                          <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> ,
+                                                                                          <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Pate> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Navet
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Navet> rdf:type owl:NamedIndividual ,
+                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Legume> ,
+                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetComestible> ,
+                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Onion
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Onion> rdf:type owl:NamedIndividual ,
+                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Legume> ,
+                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetComestible> ,
+                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Oriental
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Oriental> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Region> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Paprika
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Paprika> rdf:type owl:NamedIndividual ,
+                                                                                           <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Condiment> ,
+                                                                                           <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Epice> ,
+                                                                                           <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#PateFilo
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#PateFilo> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetComestible> ,
+                                                                                            <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> ,
+                                                                                            <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Pate> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Pistache
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Pistache> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Fruit> ,
+                                                                                            <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#FruitSec> ,
+                                                                                            <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetComestible> ,
+                                                                                            <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#PoisChiche
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#PoisChiche> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Legume> ,
+                                                                                              <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetComestible> ,
+                                                                                              <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#PoivreMoulu
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#PoivreMoulu> rdf:type owl:NamedIndividual ,
+                                                                                               <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Condiment> ,
+                                                                                               <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Epice> ,
+                                                                                               <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Pomme
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Pomme> rdf:type owl:NamedIndividual ,
+                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Fruit> ,
+                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#FruitFrais> ,
+                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetComestible> ,
+                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#PommeDeTerre
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#PommeDeTerre> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Legume> ,
+                                                                                                <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetComestible> ,
+                                                                                                <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Poulet
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Poulet> rdf:type owl:NamedIndividual ,
+                                                                                          <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetComestible> ,
+                                                                                          <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> ,
+                                                                                          <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Viande> ,
+                                                                                          <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ViandeBlanche> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Rabat_Sale_Kenitra
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Rabat_Sale_Kenitra> rdf:type owl:NamedIndividual ,
+                                                                                                      <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Region> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#RaisinsSecs
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#RaisinsSecs> rdf:type owl:NamedIndividual ,
+                                                                                               <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Fruit> ,
+                                                                                               <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#FruitSec> ,
+                                                                                               <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetComestible> ,
+                                                                                               <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#RasElHanout
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#RasElHanout> rdf:type owl:NamedIndividual ,
+                                                                                               <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Condiment> ,
+                                                                                               <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Epice> ,
+                                                                                               <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#RfissaPoulet
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#RfissaPoulet> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieDeFes> ,
+                                                                                                <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieRégionale> ,
+                                                                                                <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> ,
+                                                                                                <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Plat> ,
+                                                                                                <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Rfissa> ;
+                                                                                       <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasLegume> <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Onion> ;
+                                                                                       <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasObjetComestible> <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Onion> ,
+                                                                                                                                                                                    <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Poulet> ;
+                                                                                       <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasOrigine> <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Fes_Meknes> ;
+                                                                                       <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasViande> <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Poulet> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#SeffaPoulet
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#SeffaPoulet> rdf:type owl:NamedIndividual ,
+                                                                                               <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieDeAgadir> ,
+                                                                                               <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieRégionale> ,
+                                                                                               <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> ,
+                                                                                               <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Plat> ,
+                                                                                               <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Seffa> ,
+                                                                                               <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#SeffaMedfouna> ;
+                                                                                      <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasFruit> <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Amande> ;
+                                                                                      <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasObjetComestible> <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Amande> ,
+                                                                                                                                                                                   <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Poulet> ,
+                                                                                                                                                                                   <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Vermicelle> ;
+                                                                                      <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasOrigine> <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Sous_Massa> ;
+                                                                                      <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasPate> <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Vermicelle> ;
+                                                                                      <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasViande> <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Poulet> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Seffa_Medfouna
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Seffa_Medfouna> rdf:type owl:NamedIndividual ,
+                                                                                                  <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieDeAgadir> ,
+                                                                                                  <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieRégionale> ,
+                                                                                                  <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> ,
+                                                                                                  <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Plat> ,
+                                                                                                  <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Seffa> ,
+                                                                                                  <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#SeffaMedfouna> ;
+                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasFruit> <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Amande> ;
+                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasObjetComestible> <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Amande> ,
+                                                                                                                                                                                      <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Vermicelle> ;
+                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasOrigine> <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Sous_Massa> ;
+                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasPate> <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Vermicelle> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Sel
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Sel> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Condiment> ,
+                                                                                       <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Epice> ,
+                                                                                       <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Semoule
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Semoule> rdf:type owl:NamedIndividual ,
+                                                                                           <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Cereale> ,
+                                                                                           <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetComestible> ,
+                                                                                           <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Sous_Massa
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Sous_Massa> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Region> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#TajineAgneauLegumes
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#TajineAgneauLegumes> rdf:type owl:NamedIndividual ,
+                                                                                                       <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieDeNador> ,
+                                                                                                       <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieRégionale> ,
+                                                                                                       <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> ,
+                                                                                                       <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Plat> ,
+                                                                                                       <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Tajine> ,
+                                                                                                       <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#TajineAgneau> ;
+                                                                                              <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasObjetComestible> <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Agneau> ;
+                                                                                              <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasOrigine> <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Oriental> ;
+                                                                                              <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasViande> <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Agneau> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#TajinePouletOlives
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#TajinePouletOlives> rdf:type owl:NamedIndividual ,
+                                                                                                      <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieDeLaayoune> ,
+                                                                                                      <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieRégionale> ,
+                                                                                                      <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> ,
+                                                                                                      <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Plat> ,
+                                                                                                      <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Tajine> ,
+                                                                                                      <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#TajinePoulet> ;
+                                                                                             <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasObjetComestible> <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Poulet> ;
+                                                                                             <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasOrigine> <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Laayoune_Sakia_El_hamra> ;
+                                                                                             <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasViande> <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Poulet> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Tanger_Tetouan_El_Hoceima
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Tanger_Tetouan_El_Hoceima> rdf:type owl:NamedIndividual ,
+                                                                                                             <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Region> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#TangiaVeau
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#TangiaVeau> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieDeMarrakech> ,
+                                                                                              <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieDeRabat> ,
+                                                                                              <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieRégionale> ,
+                                                                                              <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> ,
+                                                                                              <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Plat> ,
+                                                                                              <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Tangia> ;
+                                                                                     <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasFruit> <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Tomate> ;
+                                                                                     <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasLegume> <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Ail> ;
+                                                                                     <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasObjetComestible> <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Ail> ,
+                                                                                                                                                                                  <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Tomate> ;
+                                                                                     <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasOrigine> <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Marrakech_Safi> ,
+                                                                                                                                                                          <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Rabat_Sale_Kenitra> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Tomate
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Tomate> rdf:type owl:NamedIndividual ,
+                                                                                          <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Fruit> ,
+                                                                                          <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#FruitFrais> ,
+                                                                                          <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetComestible> ,
+                                                                                          <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Veau
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Veau> rdf:type owl:NamedIndividual ,
+                                                                                        <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetComestible> ,
+                                                                                        <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> ,
+                                                                                        <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Viande> ,
+                                                                                        <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ViandeRouge> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Vermicelle
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Vermicelle> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetComestible> ,
+                                                                                              <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> ,
+                                                                                              <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Pate> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#couscous7Legumes
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#couscous7Legumes> rdf:type owl:NamedIndividual ,
+                                                                                                    <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Couscous> ,
+                                                                                                    <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#CouscousLegume> ,
+                                                                                                    <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieDeRabat> ,
+                                                                                                    <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieRégionale> ,
+                                                                                                    <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> ,
+                                                                                                    <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Plat> ;
+                                                                                           <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasFruit> <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Tomate> ;
+                                                                                           <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasObjetComestible> <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Semoule> ,
+                                                                                                                                                                                        <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Tomate> ,
+                                                                                                                                                                                        <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Veau> ;
+                                                                                           <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasOrigine> <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Rabat_Sale_Kenitra> ;
+                                                                                           <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasViande> <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Veau> .
+
+
+###  http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#couscousPoulet
+<http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#couscousPoulet> rdf:type owl:NamedIndividual ,
+                                                                                                  <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Couscous> ,
+                                                                                                  <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#CouscousPoulet> ,
+                                                                                                  <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#GastronomieRégionale> ,
+                                                                                                  <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#ObjetConsommable> ,
+                                                                                                  <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Plat> ;
+                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasObjetComestible> <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Poulet> ,
+                                                                                                                                                                                      <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Semoule> ;
+                                                                                         <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#hasViande> <http://www.semanticweb.org/tmmot/ontologies/2024/1/untitled-ontology-29#Poulet> .
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
